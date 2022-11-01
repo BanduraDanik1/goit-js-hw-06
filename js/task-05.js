@@ -6,7 +6,7 @@ inputEl.addEventListener('input', onSearchInput);
 
 function onSearchInput (element) {
     outputEl.textContent = element.currentTarget.value;
-    if (!evt.currentTarget.value) {
+    if (!element.currentTarget.value) {
         outputEl.textContent = 'Anonymous';
     }
 }
